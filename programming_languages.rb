@@ -10,15 +10,4 @@
 #move styles into hash that has style, type (as an array) key, value pair. 
 #move style key/value pair into hash
 
-def reformat_languages(languages)
-  new_hash = {}
-  languages.each do |style, language_list|
-   language_list.each do |language_name, type_info|
-     new_hash[language_name] = type_info if new_hash[language_name] == nil 
-     new_hash[language_name][:style] = []
-     new_hash[language_name][:style] << style
-end
-end 
-new_hash[:javascript][:style] << :oo
-new_hash
-end
+
