@@ -14,7 +14,7 @@ def reformat_languages(languages)
 hash = {} #make a new empty hash
 languages.each do |style, name| #iterate down to names
 name.each do |language_name, info| #iterate down to language names and info 
-hash[language_name] = info #assign new variable called info to the empty hash with new key language_name
+hash[language_name] = info if new_hash[language_name] == nil #assign new variable called info to the empty hash with new key language_name
 hash[language_name][:style] = [] #set equal to empty array
 hash[language_name][:style] << style #shovel the style key from the beginning into the array
 hash[:javascript][:style] << :oo #shovel oo into javascript 
