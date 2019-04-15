@@ -11,10 +11,10 @@
 #move style key/value pair into hash
 
 def reformat_languages(languages)
-hash = {}
-languages.each do |style, name|
-name.each do |language_name, info|
-puts hash[language_name] = info
+hash = {} #make a new empty hash
+languages.each do |style, name| #iterate down to names
+name.each do |language_name, info| #iterate down to language names and info 
+puts hash[language_name] = info #assign new variable called info to the 
 hash[language_name][:style] = []
 hash[language_name][:style] << style
 hash[:javascript][:style] << :oo
