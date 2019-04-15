@@ -17,6 +17,7 @@ name.each do |language_name, info|
 puts hash[language_name] = info
 hash[language_name][:style] = []
 hash[language_name][:style] << style
+hash[:javascript][:style] << :oo
 hash
 end 
 end 
